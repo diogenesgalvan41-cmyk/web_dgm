@@ -1,25 +1,12 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Página de Bienvenida</title>
+    <title>Bienvenido</title>
 </head>
 <body>
-    <h1>Bienvenido al sistema</h1>
-
-    <%
-        String usuario = (String) session.getAttribute("usuario");
-        if (usuario != null) {
-    %>
-        <p>Hola, <strong><%= usuario %></strong>!</p>
-    <%
-        } else {
-    %>
-        <p>No hay sesión activa.</p>
-    <%
-        }
-    %>
+    <h2>Bienvenido, <%= session.getAttribute("usuario") %>!</h2>
 </body>
 </html>
 

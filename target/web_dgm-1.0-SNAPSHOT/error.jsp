@@ -3,10 +3,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenido</title>
+    <title>Error</title>
 </head>
 <body>
-    <h2>Bienvenido, <%= session.getAttribute("usuario") %>!</h2>
+    <h2>Usuario o contraseña incorrectos</h2>
+    <a href="login.jsp">Intentar de nuevo</a>
 </body>
 </html>
-
