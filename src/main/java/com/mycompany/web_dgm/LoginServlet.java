@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet {
     // Configuración de la base de datos
     private final String DB_URL = "jdbc:mysql://localhost:3306/login_db";
     private final String DB_USER = "root";
-    private final String DB_PASSWORD = "12345";
+    private final String DB_PASSWORD = "";
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
